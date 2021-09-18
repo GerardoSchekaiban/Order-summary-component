@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+@media (min-width: 375px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+}
+
+.card{
+    background-color: #fff;
+    max-width: 28rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-image{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.card-container-content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-title{
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.card-paragraph{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.card-container-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+.plan-info > span{
+    color: hsl(224, 23%, 55%);
+}
+
+.card-container-plan > a {
+    color: hsl(245, 75%, 52%);
+  }
+  
+.card-container-plan > a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.card-container-payment{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-btn-payment{
+    cursor: pointer;
+    border: none;
+    height: 3.5rem;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: hsl(245, 75%, 52%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0px 25px 25px hsl(225, 100%, 94%);
+}
+
+.card-btn-payment:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.card-cancel-payment{
+    font-size: 18px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.card-cancel-payment:hover {
+    color: #000;
+  }
